@@ -1,13 +1,12 @@
 {
   "name": "@amn31/filter-multiple-conditions",
   "version": "1.0.0",
-  "description": "filter an array by JSON conditions using whereJSON (see @amn31/contevert2sequelize)",
+  "description": "Like a SQL query, filter a array of objects with SQL conditions (see @amn31/contevert2sequelize)",
   "main": "dist/lib/db-filters.js",
   "types": "dist/lib/db-filters.d.ts",
   "scripts": {
     "test": "ts-node test\\test-filters.ts",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "filter",
