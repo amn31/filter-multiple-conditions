@@ -1,0 +1,30 @@
+{
+  "name": "@amn31/filter-multiple-conditions",
+  "version": "1.0.0",
+  "description": "filter an array by JSON conditions using whereJSON (see @amn31/contevert2sequelize)",
+  "main": "dist/lib/db-filters.js",
+  "types": "dist/lib/db-filters.d.ts",
+  "scripts": {
+    "test": "ts-node test\\test-filters.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filter",
+    "array",
+    "query",
+    "sequelize",
+    "angular"
+  ],
+  "devDependencies": {
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.0.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "Morillon Alain (amn31t@gmail.com)",
+  "license": "MIT"
+}
