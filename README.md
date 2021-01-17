@@ -97,7 +97,24 @@ How use [amn31@filter-multiple-conditions] ?
     // Result of filtering
     let dataFiltered = MaFilter.FilterByConditions(conditions, data);
 
-    console.log(dataFiltered)
+    console.log(dataFiltered);
+
+    // FilterByConditions can sort result if you add options 'field'
+    let dataFilteredAndSorted = MaFilter.FilterByConditions(
+        conditions, 
+        data, 
+        {
+            field: 'id'
+        });
+    
+    // FilterByConditions can   reverse the sorted result if you add options 'reverse'}
+    let dataFilteredAndSorted = MaFilter.FilterByConditions(
+        conditions, 
+        data, 
+        {
+            field: 'id',
+            reverse: true
+        });
     
 ```
 

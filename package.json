@@ -1,6 +1,6 @@
 {
   "name": "@amn31/filter-multiple-conditions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Like a SQL query, filter a array of objects with SQL conditions (see @amn31/contevert2sequelize)",
   "main": "dist/lib/db-filters.js",
   "types": "dist/lib/db-filters.d.ts",

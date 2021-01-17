@@ -87,8 +87,25 @@ let conditions :FilterConditions = [
 
 var r = MaFilter.FilterByConditions(conditions, DATA);
 console.log("RESULT: " + r.length, r);
+let c : Array<number> = new Array(14,15,16,20,26);
+for(var o of r) {
+    console.log(o.id+' '+((c.find(d1 => d1  == o.id) ?true:false)));
+}
+
 if (r.length != 5) {
-    
     throw("Unexpected result!")
 }
 
+console.log("RESULT FILTER: " );
+var r = MaFilter.FilterByConditions(conditions, DATA,{field: 'id'});
+let i=0;
+for(var o of r) {
+    console.log(o.id+' '+(c[i++]  == o.id));
+}
+
+console.log("RESULT FILTER REVERSE: " );
+var r = MaFilter.FilterByConditions(conditions, DATA,{field: 'id',reverse: true});
+i=c.length -1;
+for(var o of r) {
+    console.log(o.id+' '+(c[i--]  == o.id));
+}
