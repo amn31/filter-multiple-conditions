@@ -16,6 +16,7 @@ interface ISortedField {
 
 export type ISimpleConditions = (ISimpleCondition | IOrAnd | FilterConditions)[];
 export type FilterConditions = (ISimpleCondition | IOrAnd | ISimpleConditions)
+export type SortedField = ISortedField
 
 export class MaFilter {
 
